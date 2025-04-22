@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+
+    <div style="background-color: rgba(111, 197, 212, 0.178); text-align: center; padding: 10px;">
+        <h2><h2 style="background-color: rgb(111, 197, 212); text-align: center; margin: 0; padding: 10px;">Checkout</h2>
+    </div>
+
+    <h3>Your Cart</h3>
+    <table border="1" style="width: 100%; text-align: center;">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <!-- Example books in the cart -->
+        <tr>
+            <td>Book 1</td>
+            <td>$10.00</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Book 2</td>
+            <td>$15.00</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <p><strong>Subtotal: $40.00</strong></p>
+
+    <!-- Tax calculation (assume tax rate of 8%) -->
+    <p><strong>Tax (8%): $3.20</strong></p>
+
+    <!-- Total price calculation -->
+    <p><strong>Total: $43.20</strong></p>
+
+    <form method="POST">
+        <input type="submit" name="action" value="Complete Purchase">
+    </form>
+
+</body>
+</html>

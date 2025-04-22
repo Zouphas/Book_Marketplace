@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <div style="background-color: rgba(111, 197, 212, 0.178);">
+
+        <form method="POST" style="display: inline;">
+            <button type="submit" name="action" value="logout">Logout</button>
+        </form>
+
+        <form method="POST" style="display: inline; margin-left: 835px;">
+            <button type="submit" name="action" value="delete_account">Delete Your Account</button>
+        </form>
+
+        <h2 style="background-color: rgb(111, 197, 212); text-align: center;">User Profile</h2>
+    </div>
+
+    <p style="text-align: center;">To update, enter new information and select button below</p>
+
+    <form method="POST" action="{{ url_for('update_profile') }}" style="text-align: center; margin-top: 20px;">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" value="{{ user.username }}"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value="{{ user.email }}"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="bio">Bio:</label><br>
+        <input type="text" id="bio" name="bio" value="{{ user.bio }}"><br><br>
+
+        <input type="submit" value="Update Profile">
+    </form>
+</body>
+</html>
